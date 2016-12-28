@@ -1,0 +1,132 @@
+<ion-side-menus enable-menu-with-back-views="true">
+ <fader></fader>
+  <ion-side-menu-content edge-drag-threshold="true" drag-content="true">
+    <ion-nav-bar class="bar-calm-900" align-title="left">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)">
+                </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+<!--
+<div class="popover-backdrop active"><div class="popover-wrapper" ng-transclude=""><ion-popover-view class="popover" style="top: 44px; left: 174px; margin-left: 0px; opacity: 1;">   <ion-header-bar class="bar bar-header disable-user-behavior">       <h1 class="title">My Popover Title</h1>   </ion-header-bar>   <ion-content class="padding scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">       My Popover Contents   </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content><div class="popover-arrow" style="left: 202px;"></div></ion-popover-view></div></div>
+-->
+  <ion-side-menu side="left">
+      <ion-header-bar id="" class="expanded bar bar-header disable-user-behavior">
+            <img src="img/user1.jpg" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                <ion-list>
+                  <ion-item nav-clear="" class="item item-complex light">praveen kumar</ion-item>
+                  <ion-item nav-clear="" class="item item-complex item-icon-left light">pravn1729@gmail.com</ion-item>
+                </ion-list>
+            </div>
+    </ion-header-bar>
+
+    <ion-content class="stable-bg has-expanded-header scroll-content ionic-scroll  has-header">
+           <!--<ion-list class="disable-user-behavior"><div class="list">
+                <ion-item nav-clear="" menu-close="" href="#/app/components" class="item item-complex">
+                    Profile
+                </ion-item>
+                <ion-item nav-clear="" menu-close="" href="#/app/motion" class="item item-complex">
+                    Settings
+                </ion-item>
+                <ion-item nav-clear="" menu-close="" href="#/app/ink" class="item item-complex">
+                    Sign Out
+                </ion-item>
+            </ion-list>-->
+
+<div class="list">
+                <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-ipod icon-sm"></i>
+                    Electronics
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-tshirt icon-sm"></i>
+                    Lifestyle
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-ios-home icon-sm"></i>
+                    Home and Furniture
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-android-desktop icon-sm"></i>
+                    TVs & Appliances
+                </a>
+               <a class="item item-icon-left dark" href="#/app/categories/carlogos">
+                    <i class="icon ion-model-s icon-sm"></i>
+                    Cars
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-compose icon-sm"></i>
+                    Books & More
+                </a>
+                <div class="item item-divider"> 
+                </div>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Offer Zone
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Notifications
+                </a>
+                <div class="item item-divider"> 
+                </div>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Rewards
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Cart
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Wishlist
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Rewards
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Orders
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Account
+                </a>
+                <div class="item item-divider calm"> 
+                </div>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Gift Card
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Stores
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    My Chats
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Help Centre
+                </a>
+               <a class="item item-icon-left dark" href="#">
+                    <i class="icon ion-email icon-sm"></i>
+                    Legal
+                </a>
+            </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

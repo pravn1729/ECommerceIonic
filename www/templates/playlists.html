@@ -1,0 +1,108 @@
+<ion-view view-title="EKart">
+<ion-nav-bar class="bar-calm-900 main-header-nav home-page">
+    <ion-nav-back-button class="button-clear go-back">
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)">
+                </button>
+      </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+  <div class="background-pravn">
+  <div class="list list-inset no-padding-pravn">
+    <div class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+      <input type="text" placeholder="Search for Products, Brands and More" value="{{recognizedText}}"/>
+     <!-- <i class="icon ion-ios-barcode padding-right"></i>-->
+      <button type="button" class="button icon ion-mic-a padding-right" ng-click="record()"></button>
+    </div>
+  </div>
+  </div>
+    <div class="bar bar-subheader bar-calm-900 static text-center">
+       <!--<strong class="title">Categories (search)</strong>-->
+      <div class="row" style="padding-top:0px;">
+        <div class="col">
+            <div>
+              <div class="icon-sm-20"><i class="icon ion-pricetags"></i>
+              </div>
+              <div class="font-sm-pravn">Offers
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+              <div class="icon-sm-20"><i class="icon ion-camera"></i>
+              </div>
+              <div class="font-sm-pravn">Electronics
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+              <div class="icon-sm-20"><i class="icon ion-tshirt"></i>
+              </div>
+              <div class="font-sm-pravn">Lifestyle
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+              <div class="icon-sm-20"><i class="icon ion-ios-home"></i>
+              </div>
+              <div class="font-sm-pravn">Home
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+              <div class="icon-sm-20"><i class="icon ion-more"></i>
+              </div>
+              <div class="font-sm-pravn">More
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <ion-slides options="{'loop': true, autoplay : 5000}" slider="slider2" delegate-handle="slider2" id="slider-slider2" style="width:100%;height:150px;background-color:#F9F8F8;">
+      <ion-slide-page id="slider-slide210" style="background:url(img/offer1.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="slider-slide211" style="background:url(img/offer2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="slider-slide212" style="background:url(img/offer3.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="slider-slide213" style="background:url(img/offer4.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+	<!--<ion-slide-box>
+	  <ion-slide ng-repeat="s in slides">
+		<img ng-src="{{s.image}}" height="150px" width="100%">
+	  </ion-slide>
+	</ion-slide-box>-->
+    <!--<ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>-->
+
+<!--
+<ion-content ng-controller="ExampleController" ng-init="loadImages()">
+    <div class="row" ng-repeat="image in images" ng-if="$index % 4 === 0">
+        <div class="col col-25" ng-if="$index < images.length">
+            <img ng-src="{{images[$index].src}}" width="100%" />
+        </div>
+        <div class="col col-25" ng-if="$index + 1 < images.length">
+            <img ng-src="{{images[$index + 1].src}}" width="100%" />
+        </div>
+        <div class="col col-25" ng-if="$index + 2 < images.length">
+            <img ng-src="{{images[$index + 2].src}}" width="100%" />
+        </div>
+        <div class="col col-25" ng-if="$index + 3 < images.length">
+            <img ng-src="{{images[$index + 3].src}}" width="100%" />
+        </div>
+    </div>
+</ion-content>
+
+
+-->
+  </ion-content>
+</ion-view>

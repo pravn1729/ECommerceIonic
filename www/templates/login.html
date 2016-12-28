@@ -1,0 +1,47 @@
+<ion-view id="login" hide-nav-bar="true">
+<div class="bar bar-header bar-calm-900" style="position: static;">
+                <div class="buttons buttons-left header-item">
+                    <span class="left-buttons">
+                    </span>
+                </div>
+                <div class="h1 title title-left light"><i class="icon ion-nuclear"></i> EKart</div>
+                <div class="buttons buttons-right header-item">
+                    <span class="right-buttons">
+                        <button class="button button-balanced button-fab">
+                            <i class="icon ion-star"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+    <ion-content class="scroll-content ionic-scroll  has-header" scroll="false">
+
+        <form>
+            <div class="row responsive-md">
+
+                <div class="col col-50 col-offset-25">
+
+                    <div class="list list-inset">
+                        <label class="item item-input">
+                        <i class="icon ion-android-mail placeholder-icon"></i>
+                            <input type="email" placeholder="Email">
+
+                        </label>
+                        <label class="item item-input">
+                        <i class="icon ion-android-lock placeholder-icon"></i>
+                            <input type="password" placeholder="Password">
+                        <a class="placeholder-icon">Forgot?</a>
+                        </label>
+                    </div>
+
+                    <button ng-click="dashboard()" class="button button-block button-calm-900">
+                        SIGN IN
+                    </button>
+
+                    <button class="button button-block button-light">
+                        <span class="calm-900">New to EKart? SIGNUP</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-view view-title="Cars">
+<ion-nav-bar class="bar-calm-900 main-header-nav home-page">
+    <ion-nav-back-button class="button-clear go-back">
+      </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content>
+  <div class="bar bar-subheader bar-light static">
+  	<div class = "row">
+  		<div class="col"><i class="icon ion-drag icon-sm-25"></i></div>
+  		<div class="col"><i class="icon ion-arrow-swap icon-sm-25"></i> Sort</div>
+  		<div class="col"><i class="icon ion-funnel icon-sm-25"></i> Filter</div>
+  	</div>
+  </div>
+
+  <div ng-repeat="car in cars"> 
+    <a class = "row item" style="border-bottom: 1px solid lightgrey;" href="#/app/categories/cars/details">
+    	<div class="col col-30">
+    	<img src="{{car.img}}" width="120" height="100"/>
+    	</div>
+    	<div class="col col-70">
+    		<div class="row">
+    			<div class="col col-70">
+    				<b>{{car.name}}</b><br/>
+    				<span style="background-color: #4ED91A; border-radius: 3px;padding:2px 2px 2px 2px; color:#fff;font-size:11px;">{{car.rating}} <i class="icon ion-android-star"></i></span><span style="font-size:11px;color:grey;"> ({{car.ratingmembers}}) </span> fAssured<br/>
+    				<b>&#8377;{{car.newprice}}</b> <span style="font-size:12px;color:grey;"><strike>{{car.oldprice}}</strike> <b>{{car.offerpercent}}% Off</b></span><br/>
+    				<span style="color: #4ED91A;"><i class="icon ion-pricetag"></i></span> {{car.offermsg}}
+    			</div>
+    			<div class="col col-30" style="text-align:right;">
+    				<span style="color: grey;"><i class="icon ion-heart icon-sm-25"></i></span>
+    			</div>
+    		</div>
+    	</div>
+    </a>
+  </div>
+
+  </ion-content>
+</ion-view>
